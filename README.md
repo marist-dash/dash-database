@@ -7,8 +7,17 @@ Launches a PostgreSQL database and [Adminer](https://www.adminer.org/)
 3. Configure the database connection properties in `db-configs.env`
 4. Build and start the services `docker-compose up -d`
     * Adminer located on port 8082
+    
+### Adminer Login
+| Key  | Value |
+| ------------- | ------------- |
+| System  | PostgreSQL  |
+| Server  | db  |
+| Username | dash |
+| Password | 🔒 |
+| Database | dash |
 
-### Tables
+## Tables
 
 ### browser_analytics
 
@@ -22,11 +31,5 @@ References the [https://github.com/marist-dash/dash-browser-automation](https://
 | timestamp | timestamp | ❌ |
 
 
-### Adminer Login
-| Key  | Value |
-| ------------- | ------------- |
-| System  | PostgreSQL  |
-| Server  | db  |
-| Username | dash |
-| Password | 🔒 |
-| Database | dash |
+
+
