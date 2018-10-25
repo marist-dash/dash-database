@@ -19,8 +19,13 @@ services:
     restart: always
     networks:
       - dash-net
+    labels:
+      - "traefik.docker.network=dash-net"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.rule=Host:adminer.maristdash.tk"
+      - "traefik.basic.port=8080"
     ports:
-      - 8082:8080
+      - "8082:8080"
 
 networks:
   dash-net:
