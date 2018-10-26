@@ -11,8 +11,8 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     env_file:
       - db-configs.env
-    ports:
-      - 5432:5432
+    expose:
+      - "5432"
 
   adminer:
     image: adminer
