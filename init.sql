@@ -4,3 +4,8 @@ CREATE TABLE IF NOT EXISTS "browser_analytics" (
   "execute_time" bigint NULL,
   "timestamp" timestamp NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS "browser_reports" (
+  "degreeworks_hash" integer NOT NULL,
+  "degreeworks_text" text NOT NULL
+);
