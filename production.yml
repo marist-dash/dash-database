@@ -22,7 +22,7 @@ services:
     labels:
       - "traefik.docker.network=dash-net"
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:dash-adminer.dev-maristdash.tk"
+      - "traefik.frontend.rule=PathPrefixStrip:/dash-adminer"
       - "traefik.port=8080"
       - "traefik.backend=dash-adminer"
     ports:
